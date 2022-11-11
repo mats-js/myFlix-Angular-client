@@ -1,34 +1,39 @@
+$backgroundColor: #000;
 $cardColor: rgb(56, 56, 56);
-$labelColor: rgb(197, 197, 197);
 $textColor: #fff;
 $boxShadowColor: #1e1e1e;
 
-.mat-card {
+* {
+  box-sizing: border-box;
+}
+
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: $backgroundColor;
+}
+
+.welcome-card {
   max-width: 300px;
   margin: auto;
   padding: 30px;
   flex-direction: column;
-  box-shadow: 0 10px 30px $boxShadowColor;
+  box-shadow: 0 25px 30px $boxShadowColor;
   background-color: $cardColor;
   justify-content: space-evenly;
 }
 
-.mat-card-header {
+.welcome-card-header {
   margin-bottom: 20px;
   color: $textColor;
   display: flex;
   justify-content: center;
 }
 
-mat-label {
-  color: $labelColor;
-}
-
-input.mat-input-element {
-  color: $textColor;
-}
-
-.mat-card > .mat-card-actions {
+.mat-card > .mat-card-actions:last-child {
   margin-left: 0;
   padding-bottom: 0;
   display: flex;

@@ -1,0 +1,31 @@
+$cardColor: rgb(56, 56, 56);
+$textColor: #fff;
+$boxShadowColor: #1e1e1e;
+
+.summary-dialog {
+  background-color: $cardColor;
+  margin-top: 0;
+  box-shadow: none;
+}
+
+.summary-dialog-title {
+  color: $textColor;
+}
+
+.summary-dialog-content {
+  color: $textColor;
+}
+
+.summary-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  line-height: 14px;
+  min-width: auto;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  color: $textColor;
+}
